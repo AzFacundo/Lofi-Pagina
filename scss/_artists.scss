@@ -1,0 +1,95 @@
+.alofi{
+    background-image: url(../imagenes/spiderman.webp);
+    text-align: center;
+    h1{
+        font-size: 7rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+    p{
+        font-size: 4rem;
+        padding-bottom: 3rem;
+    }
+}
+.alofi_text{
+    padding-top: 4rem;
+    background-color: $bgcolor;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 4rem;
+    p{
+        font-size: 2rem;
+    }
+    img{
+        height: 380px;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    iframe{
+        padding-right: 2rem;
+        padding-left: 2rem;
+    }
+}
+.alofi_text1{
+    @extend .alofi_text;
+    flex-direction: row-reverse;
+}
+.alofi_text2{
+    @extend .alofi_text;
+    padding-bottom: 6rem;
+}
+@media only screen and (max-width: 1200px){
+    .alofi {
+        h1{ font-size: 4rem;}
+        p{ font-size: 2rem;}
+    }
+    .alofi_text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .alofi_text p{
+            font-size: 1.5rem;
+        }
+        iframe{width: 500px;}
+    }
+    .alofi_text1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .alofi_text1 p{
+            font-size: 1.5rem;
+        }
+        iframe{width: 500px;}
+    }
+    .alofi_text2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .alofi_text2 p{
+            font-size: 1.5rem;
+        }
+        iframe{width: 500px;}
+    }
+}
+@media only screen and (max-width: 530px){
+    .alofi_text{
+        iframe{width: 300px;}
+        img{ width: 300px; height: 300px;}
+    }
+}
+@media only screen and (max-width: 530px){
+    .alofi_text1{
+        iframe{width: 300px;}
+        img{ width: 300px; height: 300px;}
+    }
+}
+@media only screen and (max-width: 530px){
+    .alofi_text2{
+        iframe{width: 300px;}
+        img{ width: 300px; height: 300px;}
+    }
+}

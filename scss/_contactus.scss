@@ -1,0 +1,45 @@
+.main5{
+    background-image: url(../imagenes/lofiback3.jpg);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    h1{
+        text-align: center;
+        padding-top: 50px;
+        padding-bottom: 20px;
+        font-size: 6rem;
+    }
+    p{
+    
+        text-align: center;
+        font-size: 2rem;
+    }
+}
+.form_t{
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    h2{
+        font-size: 4rem;
+        padding-bottom: 20px;
+    }
+    .form1{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        .formconf{
+            font-size: 1.5rem;
+            padding-bottom: 20px;
+        }
+        .formconf1{
+            padding-top: 20px;
+            font-size: 1.5rem;
+        }
+        .input{
+            margin-top: 20px;
+            width: 40px;
+        }
+    }
+}

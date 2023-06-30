@@ -1,423 +1,622 @@
-*{
-    margin: 0%;
-    padding: 0%;
-}
-html{
-    font-size: 62.5%;
-}
-@font-face {
-    font-family:'fuente1';
-    src: url('../fuente/lofifuente.ttf') format('truetype');
-}
-h1{ 
-    color: black;
-}
-h2{
-    color: black;
-}
-h3{
-        color: black;
-}
-p{ 
-    color: black;
-}
-h4{
-    color: black;
+.main4 {
+  background-image: url(../imagenes/playitaback.png);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 
-body{
-    font-family: 'fuente1',sans-serif;
+.live_text h1 {
+  text-align: center;
+  font-size: 6rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
-a{
-    text-decoration: none;
-    color: black;
-}
-
-.header1{
-    background-color: #333;
-}
-.font-nav{
-    font-size: 1.5rem;
+.live_text p {
+  font-size: 1.8rem;
+  text-align: center;
 }
 
-.inicio{ 
-    background-image: url(../imagenes/lofiBack.JPG); 
-    background-size: cover;
+.livesifr {
+  padding-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-bottom: 20px;
 }
-.inicio_contenedor{
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-.primerh1{ 
-    margin-bottom: 40px;
-    font-size: 14rem;
-    text-align: center;
-}
-.primerp{
-    font-size: 2.5rem;
-    text-align: center;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 10r;
+.livesifr .iframe4 {
+  font-size: 2rem;
+  text-align: center;
+  padding-bottom: 10px;
 }
 
-.sect1{
-    background-color:  #333;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; 
-    gap: 20px;
+.main5 {
+  background-image: url(../imagenes/lofiback3.jpg);
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
 }
-.sect1_h2{
-    margin-top: 30px;
-    font-size: 10rem;
-    text-align: center;
+.main5 h1 {
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  font-size: 6rem;
 }
-.sect1_ifr{
-    width: 90%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+.main5 p {
+  text-align: center;
+  font-size: 2rem;
 }
-.ifr_p{
-    font-size: 1.8rem;
+
+.form_t {
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
-.lofichica img{
-    height: 300px;
-    padding-top: 15px;
+.form_t h2 {
+  font-size: 4rem;
+  padding-bottom: 20px;
 }
-.sect1_h3{
-    font-size: 2.5rem;
-    margin-bottom: 40px;
+.form_t .form1 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
 }
-.sect2{
-    grid-area: artistas;
-    background-image: url(../imagenes/lofiback2.jpg);
-    background-size: cover;
+.form_t .form1 .formconf {
+  font-size: 1.5rem;
+  padding-bottom: 20px;
 }
-.sect2_text{
-    margin-top: 30px;
-    text-align: center;
+.form_t .form1 .formconf1 {
+  padding-top: 20px;
+  font-size: 1.5rem;
 }
-.sect2_text h3{
-    font-size: 4rem;
+.form_t .form1 .input {
+  margin-top: 20px;
+  width: 40px;
 }
-.sect2_text p{
+
+.hlofi {
+  background-image: url(../imagenes/torreback.png);
+  text-align: center;
+}
+.hlofi h1 {
+  font-size: 6rem;
+  padding-top: 5rem;
+  padding-bottom: 2rem;
+}
+.hlofi p {
+  font-size: 3rem;
+  text-align: center;
+  padding-bottom: 4rem;
+}
+
+.hlofi_text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #333;
+  padding-top: 3rem;
+  padding-left: 5rem;
+  padding-right: 10rem;
+  padding-bottom: 3rem;
+}
+.hlofi_text img {
+  height: 400px;
+  width: 500px;
+}
+.hlofi_text p {
+  padding-left: 1rem;
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+.hlofi_text1 {
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+.hlofi_text1 img {
+  height: 400px;
+  width: 500px;
+}
+.hlofi_text1 p {
+  padding-left: 1rem;
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+@media only screen and (max-width: 1200px) {
+  .hlofi h1 {
     font-size: 3rem;
-    margin: 30px 30px;
-}
-.sect2_art{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding-bottom: 60px;
-}
-.artfotos img{
-    height: 450px;
-}
-.nombresart{
-    font-size: 2.8rem;
-    text-align: center;
-}
-.sect3{
-    background-color:#333;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding-bottom: 40px;
-}
-.sect3_text{
-    margin-top: 40px;
-}
-.sect3_text h3{
-    font-size: 5rem;
-}
-.sect3_text h4{
-    font-size: 2.5rem;
-    padding-bottom: 20px;
-}
-.sect3_text p{
-    font-size: 2.3rem;
-    margin-left: 40px;
-    margin-right: 40px;
-    padding-bottom: 20px;
-}
-.sect4{
-    background-image: url(../imagenes/loficiudad.png);
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.lives-listen{
-    text-align: center;
-    padding-top: 10rem;
-}
-.imagenlive{
-    display: flex;
-    justify-content: center;
-padding-bottom: 10rem;
-}
-.sect4 h3{
-    font-size: 10rem;
-}
-.foot1{
-    grid-area: footer;
-    background-color: rgb(49, 48, 49);
-}
-.footclass{
-    padding-top: 20px;
-    display: flex;
-    flex-direction: column;
-}
-
-.footclass  img{
-    height: 30px;
-}
-.footclass2{
-    text-align: center;
-}
-
-
-.header5{
-    grid-area: header_nav1;
-    background-color: #333;
-}
-.main5{
-    background-image: url(../imagenes/lofiback3.jpg);
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-}
-.main5 h1{
-    text-align: center;
-    padding-top: 50px;
-    padding-bottom: 20px;
-    font-size: 6rem;
-}
-.main5 p{
-    
-    text-align: center;
-    font-size: 3rem;
-}
-.form_t{
-    text-align: center;
-    padding-top: 40px;
-    padding-bottom: 40px;
-}
-.form_t h2{
-    font-size: 4rem;
-    padding-bottom: 20px;
-}
-.form1{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-}
-.formconf{
-    font-size: 1.5rem;
-    padding-bottom: 20px;
-}
-.formconf1{
-    padding-top: 20px;
-    font-size: 1.5rem;
-}
-.input{
-    margin-top: 20px;
-    width: 40px;
-}
-.foot5{
-    background-color: #333;
-}
-.header4{
-    background-color: #333;
-}
-.main4{
-    background-image: url(../imagenes/playitaback.png);
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-}
-.live_text h1{
-    text-align: center;
-    font-size: 6rem;
-    padding-top: 40px;
-    padding-bottom: 40px;
-}
-.live_text p{
-    font-size: 3rem;
-}
-.livesifr{
-    padding-top: 40px;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-around;
-    padding-bottom: 20px;
-}
-.iframe4{
+  }
+  .hlofi p {
     font-size: 2rem;
-    text-align: center;
-    padding-bottom: 10px;
+  }
+  .hlofi_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .hlofi_text p {
+    font-size: 2rem;
+  }
+  .hlofi_text1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .hlofi_text1 p {
+    font-size: 2rem;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .hlofi_text img {
+    width: 300px;
+    height: 300px;
+  }
+  .hlofi_text1 img {
+    width: 300px;
+    height: 300px;
+  }
+}
+.alofi {
+  background-image: url(../imagenes/spiderman.webp);
+  text-align: center;
+}
+.alofi h1 {
+  font-size: 7rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.alofi p {
+  font-size: 4rem;
+  padding-bottom: 3rem;
 }
 
-.foot4{
-    background-color: #333;
+.alofi_text, .alofi_text2, .alofi_text1 {
+  padding-top: 4rem;
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 4rem;
 }
-@media (max-width: 1440px){
-    .livesifr{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        grid-template-areas: 
-        "lofigirll lofiboy" 
-        "lofiradio chillhop"
-    }
-    .lofi_live{
-        grid-area: lofigirll;
-        text-align: center;
-    }
-    .lofiboy_live{
-        grid-area: lofiboy;
-        text-align: center;
-    }
-    .lofiradio{
-        grid-area: lofiradio;
-        text-align: center;
-    }
-    .chillhop{
-        grid-area: chillhop;
-        text-align: center;
-    }
+.alofi_text p, .alofi_text2 p, .alofi_text1 p {
+  font-size: 2rem;
+}
+.alofi_text img, .alofi_text2 img, .alofi_text1 img {
+  height: 380px;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.alofi_text iframe, .alofi_text2 iframe, .alofi_text1 iframe {
+  padding-right: 2rem;
+  padding-left: 2rem;
+}
+
+.alofi_text1 {
+  flex-direction: row-reverse;
+}
+
+.alofi_text2 {
+  padding-bottom: 6rem;
+}
+
+@media only screen and (max-width: 1200px) {
+  .alofi h1 {
+    font-size: 4rem;
+  }
+  .alofi p {
+    font-size: 2rem;
+  }
+  .alofi_text, .alofi_text1, .alofi_text2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .alofi_text .alofi_text p, .alofi_text1 .alofi_text p, .alofi_text2 .alofi_text p, .alofi_text .alofi_text1 p, .alofi_text1 .alofi_text1 p, .alofi_text2 .alofi_text1 p, .alofi_text .alofi_text2 p, .alofi_text1 .alofi_text2 p, .alofi_text2 .alofi_text2 p {
+    font-size: 1.5rem;
+  }
+  .alofi_text iframe, .alofi_text1 iframe, .alofi_text2 iframe {
+    width: 500px;
+  }
+  .alofi_text1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .alofi_text1 .alofi_text1 p {
+    font-size: 1.5rem;
+  }
+  .alofi_text1 iframe {
+    width: 500px;
+  }
+  .alofi_text2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .alofi_text2 .alofi_text2 p {
+    font-size: 1.5rem;
+  }
+  .alofi_text2 iframe {
+    width: 500px;
+  }
+}
+@media only screen and (max-width: 530px) {
+  .alofi_text iframe, .alofi_text1 iframe, .alofi_text2 iframe {
+    width: 300px;
+  }
+  .alofi_text img, .alofi_text1 img, .alofi_text2 img {
+    width: 300px;
+    height: 300px;
+  }
+}
+@media only screen and (max-width: 530px) {
+  .alofi_text1 iframe {
+    width: 300px;
+  }
+  .alofi_text1 img {
+    width: 300px;
+    height: 300px;
+  }
+}
+@media only screen and (max-width: 530px) {
+  .alofi_text2 iframe {
+    width: 300px;
+  }
+  .alofi_text2 img {
+    width: 300px;
+    height: 300px;
+  }
+}
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+@font-face {
+  font-family: "fuente1";
+  src: url("../fuente/lofifuente.ttf") format("truetype");
+}
+body {
+  font-family: "fuente1", sans-serif;
+  color: white;
+}
+body a {
+  text-decoration: none;
+  color: white;
+}
+
+.header1 {
+  background-color: #333;
+}
+.header1 .font-nav {
+  font-size: 1.5rem;
+}
+
+.inicio {
+  background-image: url(../imagenes/lofiBack.JPG);
+  background-size: cover;
+}
+.inicio .inicio_contenedor {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.inicio .inicio_contenedor .primerh1 {
+  margin-bottom: 40px;
+  font-size: 14rem;
+  text-align: center;
+}
+.inicio .inicio_contenedor .primerp {
+  font-size: 2.5rem;
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 10rem;
+}
+
+.sect1 {
+  background-color: #333;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.sect1 .sect1_h2 {
+  margin-top: 30px;
+  font-size: 10rem;
+  text-align: center;
+}
+.sect1 .sect1_h3 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.sect1_ifr {
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.sect1_ifr .ifr_p {
+  font-size: 1.8rem;
+}
+.sect1_ifr .lofichica img {
+  height: 300px;
+  padding-top: 15px;
+}
+.sect1_ifr .lofichica .lofigrillef:hover {
+  transform: scale(1.02);
+  transition: 0.1s;
+}
+
+.sect2 {
+  grid-area: artistas;
+  background-image: url(../imagenes/lofiback2.jpg);
+  background-size: cover;
+}
+.sect2 .sect2_text {
+  margin-top: 30px;
+  text-align: center;
+}
+.sect2 .sect2_text h3 {
+  font-size: 4rem;
+}
+.sect2 .sect2_text p {
+  font-size: 3rem;
+  margin: 30px 30px;
+}
+
+.sect2_art {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-bottom: 60px;
+}
+.sect2_art .artfotos img {
+  height: 450px;
+}
+.sect2_art .artfotos .nombresart {
+  font-size: 2.8rem;
+  text-align: center;
+  justify-content: center;
+}
+.sect2_art .artfotos .artef:hover {
+  transform: scale(1.02);
+  transition: 0.1s;
+}
+
+.sect3 {
+  background-color: #333;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 40px;
+}
+.sect3 .sect3_text {
+  margin-top: 40px;
+}
+.sect3 .sect3_text h3 {
+  font-size: 5rem;
+}
+.sect3 .sect3_text h4 {
+  font-size: 2.5rem;
+  padding-bottom: 20px;
+}
+.sect3 .sect3_text p {
+  font-size: 2.3rem;
+  margin-left: 40px;
+  margin-right: 40px;
+  padding-bottom: 20px;
+}
+.sect3 .div2art3 .lofitecla:hover {
+  transform: scale(1.05);
+  transition: 0.1s;
+}
+
+.sect4 {
+  background-image: url(../imagenes/loficiudad.png);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.sect4 .lives-listen {
+  text-align: center;
+  padding-top: 10rem;
+}
+.sect4 .lives-listen h3 {
+  font-size: 10rem;
+}
+.sect4 .imagenlive {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 10rem;
+}
+.sect4 .imagenlive .liveimagen1:hover {
+  transform: scale(1.05);
+  transition: 0.1s;
+}
+
+.foot1 {
+  color: black;
+  grid-area: footer;
+  background-color: rgb(49, 48, 49);
+}
+.foot1 .footclass {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.foot1 .footclass a {
+  color: black;
+}
+.foot1 .footclass img {
+  height: 30px;
+}
+.foot1 .footclass2 {
+  text-align: center;
+}
+
+@media only screen and (max-width: 1440px) {
+  .livesifr {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "lofigirll lofiboy" "lofiradio chillhop";
+  }
+  .lofi_live {
+    grid-area: lofigirll;
+    text-align: center;
+  }
+  .lofiboy_live {
+    grid-area: lofiboy;
+    text-align: center;
+  }
+  .lofiradio {
+    grid-area: lofiradio;
+    text-align: center;
+  }
+  .chillhop {
+    grid-area: chillhop;
+    text-align: center;
+  }
 }
 @media (max-width: 1413px) {
-    .sect1_ifr{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
-        grid-template-areas:  
-        "lofigirl"
-        "ifr"
-        "ifr1";
-    }
-    .lofichica{
-        grid-area: lofigirl;
-        text-align: center;
-    }
-    .sect1_ifr1{
-        grid-area: ifr;
-        text-align: center;
-    }
-    .ifr_p{
-        grid-area: ifr1;
-        text-align: center;
-    }
-        .main5-text h1{
-        font-size: 3rem;
-    }
-    .main5-text p{
-        font-size: 1.7rem;
-    }
+  .sect1_ifr {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "lofigirl" "ifr" "ifr1";
+  }
+  .lofichica {
+    grid-area: lofigirl;
+    text-align: center;
+  }
+  .sect1_ifr1 {
+    grid-area: ifr;
+    text-align: center;
+  }
+  .ifr_p {
+    grid-area: ifr1;
+    text-align: center;
+  }
+  .main5-text h1 {
+    font-size: 3rem;
+  }
+  .main5-text p {
+    font-size: 1.7rem;
+  }
 }
-@media (max-width: 819px){
-    .primerh1{
-        font-size: 8rem;
-    }
+@media (max-width: 819px) {
+  .inicio .inicio_contenedor .primerh1 {
+    font-size: 5rem;
+  }
 }
-@media (max-width: 798px){
-    .div2art3 img{
-        height: 400px;
-        width: 400px;
-        text-align: center;
-    }
+@media (max-width: 798px) {
+  .div2art3 img {
+    height: 400px;
+    width: 400px;
+    text-align: center;
+  }
 }
-
-@media (max-width: 700px){
-    .artfotos img{
-        width: 300px;
-        height: 300px
-        }
-    .livesifr{
-        display: grid;
-        grid-template-columns: 1fr ;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
-        grid-template-areas: 
-        "lofigirll"
-        "lofiboy" 
-        "lofiradio" 
-        "chillhop"
-    }
-    .lofi_live{
-        grid-area: lofigirll;
-        text-align: center;
-    }
-    .lofiboy_live{
-        grid-area: lofiboy;
-        text-align: center;
-    }
-    .lofiradio{
-        grid-area: lofiradio;
-        text-align: center;
-    }
-    .chillhop{
-        grid-area: chillhop;
-        text-align: center;
-    }
-    .primerh1{
-        font-size: 5rem;
-    }
-    .primerp{
-        font-size: 2rem;
-    }
-    .sect1_h2{
-        font-size: 5rem;
-    }
-    .sect1_ifr iframe{
-        width: 300px;
-    }
-    .sect1_h3{
-        font-size: 2rem;
-    }
-    .sect2_text h3{
-        font-size: 3rem;
-    }
-    .sect2_text p{
-        font-size: 2rem;
-    }
-    .sect3_text h3{
-        font-size: 3rem
-    }
-    .sect3_text h4{
-        font-size: 2rem;
-    }
-    .sect3_text p{
-        font-size: 2rem;
-    }
-    .div2art3 img{
-        width: 300px;
-        height: 300px;
-    }
-    .lives-listen h3{
-        font-size: 5rem;
-    }
-    .imagenlive img{
-        width: 300px;
-        height: 300px;
-    }
-    .live_text h1{
-        font-size: 4rem;
-    }
-    .live_text p{
-        font-size: 1.7rem;
-    }
+@media (max-width: 700px) {
+  .sect2_art .artfotos img {
+    width: 300px;
+    height: 300px;
+  }
+  .livesifr {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "lofigirll" "lofiboy" "lofiradio" "chillhop";
+  }
+  .lofi_live {
+    grid-area: lofigirll;
+    text-align: center;
+  }
+  .lofiboy_live {
+    grid-area: lofiboy;
+    text-align: center;
+  }
+  .lofiradio {
+    grid-area: lofiradio;
+    text-align: center;
+  }
+  .chillhop {
+    grid-area: chillhop;
+    text-align: center;
+  }
+  .inicio .inicio_contenedor .primerp {
+    font-size: 2rem;
+  }
+  .sect1 .sect1_h2 {
+    font-size: 5rem;
+  }
+  .sect1_ifr .sect1_ifr1 iframe {
+    width: 300px;
+  }
+  .sect1_ifr .ifr_p iframe {
+    width: 300px;
+  }
+  .sect1 .sect1_h3 {
+    font-size: 2rem;
+  }
+  .sect2 .sect2_text h3 {
+    font-size: 3rem;
+  }
+  .sect2 .sect2_text p {
+    font-size: 2rem;
+  }
+  .sect3 .sect3_text h3 {
+    font-size: 3rem;
+  }
+  .sect3 .sect3_text h4 {
+    font-size: 2rem;
+  }
+  .sect3 .sect3_text p {
+    font-size: 1.5rem;
+  }
+  .div2art3 img {
+    width: 300px;
+    height: 300px;
+  }
+  .sect4 .lives-listen h3 {
+    font-size: 5rem;
+  }
+  .imagenlive img {
+    width: 300px;
+    height: 300px;
+  }
+  .live_text h1 {
+    font-size: 4rem;
+  }
+  .live_text p {
+    font-size: 1.7rem;
+  }
+  .correo {
+    display: block;
+  }
 }
 
+/*# sourceMappingURL=style.css.map */

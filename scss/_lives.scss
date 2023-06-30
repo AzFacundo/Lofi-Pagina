@@ -1,0 +1,32 @@
+.main4{
+    background-image: url(../imagenes/playitaback.png);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.live_text{
+    h1{
+        text-align: center;
+        font-size: 6rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+    p{
+        font-size: 1.8rem;
+        text-align: center;
+    }
+}
+.livesifr{
+    padding-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-bottom: 20px;
+    .iframe4{
+        font-size: 2rem;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+}

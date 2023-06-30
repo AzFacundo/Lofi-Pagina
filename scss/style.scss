@@ -1,0 +1,355 @@
+$bgcolor: #333;
+@import "lives";
+@import "contactus";
+@import "history";
+@import"artists";
+*{
+    margin: 0%;
+    padding: 0%;
+}
+html{
+    font-size: 62.5%;
+}
+@font-face {
+    font-family:'fuente1';
+    src: url('../fuente/lofifuente.ttf') format('truetype');
+}
+body{
+    font-family: 'fuente1',sans-serif;
+    color: white;
+    a{
+        text-decoration: none;
+        color: white;
+    }
+}
+.header1{
+    background-color: $bgcolor;
+    .font-nav{
+        font-size: 1.5rem;
+    }
+}
+.inicio{ 
+    background-image: url(../imagenes/lofiBack.JPG); 
+    background-size: cover;
+    .inicio_contenedor{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .primerh1{ margin-bottom: 40px;
+            font-size: 14rem;
+            text-align: center;
+        }
+        .primerp{
+            font-size: 2.5rem;
+            text-align: center;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-bottom: 10rem;
+        }
+    }
+}
+.sect1{
+    background-color:  #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    gap: 20px;
+    .sect1_h2{
+        margin-top: 30px;
+        font-size: 10rem;
+        text-align: center;
+    }
+    .sect1_h3{
+        font-size: 2.5rem;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    
+}
+.sect1_ifr{
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    .ifr_p{
+        font-size: 1.8rem;
+    }
+    .lofichica {
+        img{
+            height: 300px;
+            padding-top: 15px;
+            }
+        .lofigrillef{
+            &:hover{
+                transform: scale(1.02);
+                transition: 0.1s;
+                }
+        }
+    }
+}
+.sect2{
+    grid-area: artistas;
+    background-image: url(../imagenes/lofiback2.jpg);
+    background-size: cover;
+    .sect2_text{
+        margin-top: 30px;
+        text-align: center;
+        h3{
+            font-size: 4rem;
+        }
+        p{
+            font-size: 3rem;
+            margin: 30px 30px;
+        }
+    }
+}
+    .sect2_art{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-bottom: 60px;
+    .artfotos {
+        img{height: 450px;}
+        .nombresart{
+        font-size: 2.8rem;
+        text-align: center;
+        justify-content: center;
+        }
+        .artef{
+            &:hover{
+                transform: scale(1.02);
+                transition: 0.1s;
+                }
+        }
+    }
+}
+.sect3{
+    background-color:#333;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 40px;
+    .sect3_text{
+        margin-top: 40px;
+        h3{
+            font-size: 5rem;
+        }
+        h4{
+            font-size: 2.5rem;
+            padding-bottom: 20px;
+        }
+        p{
+            font-size: 2.3rem;
+            margin-left: 40px;
+            margin-right: 40px;
+            padding-bottom: 20px;
+        }
+    }
+    .div2art3{
+        .lofitecla{
+            &:hover{
+                transform: scale(1.05);
+                transition: 0.1s;
+                }
+        }
+    }
+}
+.sect4{
+    background-image: url(../imagenes/loficiudad.png);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .lives-listen{
+        text-align: center;
+        padding-top: 10rem;
+        h3{
+            font-size: 10rem;
+        }
+    }
+    .imagenlive{
+        display: flex;
+        justify-content: center;
+        padding-bottom: 10rem;
+        .liveimagen1{
+            &:hover{
+                transform: scale(1.05);
+                transition: 0.1s;
+                }
+        }
+    }
+}
+.foot1{
+    color: black;
+    grid-area: footer;
+    background-color: rgb(49, 48, 49);
+    .footclass{
+        padding-top: 20px;
+        display: flex;
+        flex-direction: column;
+        a{
+            color: black;
+        }
+        img{
+            height: 30px;
+        }
+    }
+    .footclass2{
+    text-align: center;
+    }
+}
+@media only screen and (max-width: 1440px){
+    .livesifr{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "lofigirll lofiboy" 
+        "lofiradio chillhop"
+    }
+    .lofi_live{
+        grid-area: lofigirll;
+        text-align: center;
+    }
+    .lofiboy_live{
+        grid-area: lofiboy;
+        text-align: center;
+    }
+    .lofiradio{
+        grid-area: lofiradio;
+        text-align: center;
+    }
+    .chillhop{
+        grid-area: chillhop;
+        text-align: center;
+    }
+}
+@media (max-width: 1413px) {
+    .sect1_ifr{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas:  
+        "lofigirl"
+        "ifr"
+        "ifr1";
+    }
+    .lofichica{
+        grid-area: lofigirl;
+        text-align: center;
+    }
+    .sect1_ifr1{
+        grid-area: ifr;
+        text-align: center;
+    }
+    .ifr_p{
+        grid-area: ifr1;
+        text-align: center;
+    }
+        .main5-text h1{
+        font-size: 3rem;
+    }
+    .main5-text p{
+        font-size: 1.7rem;
+    }
+}
+@media (max-width: 819px){
+    .inicio .inicio_contenedor .primerh1 {
+        font-size: 5rem;
+    }
+}
+@media (max-width: 798px){
+    .div2art3 img{
+        height: 400px;
+        width: 400px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 700px){
+    .sect2_art .artfotos img{
+        width: 300px;
+        height: 300px
+        }
+    .livesifr{
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "lofigirll"
+        "lofiboy" 
+        "lofiradio" 
+        "chillhop"
+    }
+    .lofi_live{
+        grid-area: lofigirll;
+        text-align: center;
+    }
+    .lofiboy_live{
+        grid-area: lofiboy;
+        text-align: center;
+    }
+    .lofiradio{
+        grid-area: lofiradio;
+        text-align: center;
+    }
+    .chillhop{
+        grid-area: chillhop;
+        text-align: center;
+    }
+    .inicio .inicio_contenedor .primerp{
+        font-size: 2rem;
+    }
+    .sect1 .sect1_h2{
+        font-size: 5rem;
+    }
+    .sect1_ifr .sect1_ifr1 iframe{
+        width: 300px;
+    }
+    .sect1_ifr .ifr_p iframe{
+        width: 300px;
+    }
+    .sect1 .sect1_h3{
+        font-size: 2rem;
+    }
+    .sect2 .sect2_text h3{
+        font-size: 3rem;
+    }
+    .sect2 .sect2_text p{
+        font-size: 2rem;
+    }
+    .sect3 .sect3_text h3{
+        font-size: 3rem
+    }
+    .sect3 .sect3_text h4{
+        font-size: 2rem;
+    }
+    .sect3 .sect3_text p{
+        font-size: 1.5rem;
+    }
+    .div2art3 img{
+        width: 300px;
+        height: 300px;
+    }
+    .sect4 .lives-listen h3{
+        font-size: 5rem;
+    }
+    .imagenlive img{
+        width: 300px;
+        height: 300px;
+    }
+    .live_text h1{
+        font-size: 4rem;
+    }
+    .live_text p{
+        font-size: 1.7rem;
+    }
+    .correo{
+        display: block;
+    }
+}
+
